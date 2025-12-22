@@ -1,0 +1,16 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          # Generate toJson and fromJson methods
+          explicit_to_json: true
+          # Include fields with null values in JSON
+          include_if_null: false
+          # Use field names as JSON keys
+          field_rename: none
+          # Generate checked fromJson methods
+          checked: true
+          # Create factory and toJson methods
+          create_factory: true
+          create_to_json: true
